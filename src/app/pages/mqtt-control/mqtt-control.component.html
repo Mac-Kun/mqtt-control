@@ -1,0 +1,30 @@
+<form [formGroup]="mqttFormGroup">
+  <mat-form-field appearance="fill">
+    <mat-label>Topic</mat-label>
+    <input matInput formControlName="topic">
+  </mat-form-field>
+</form>
+
+<button mat-raised-button color="primary" (click)="subscribe()">subscribe</button>
+
+<form [formGroup]="mqttFormGroup">
+  <mat-form-field appearance="fill">
+    <mat-label>Publish Message</mat-label>
+    <input matInput formControlName="publish">
+  </mat-form-field>
+</form>
+
+<button mat-raised-button color="primary" (click)="publish()">publish</button>
+
+<form [formGroup]="mqttFormGroup">
+  <mat-form-field appearance="fill">
+    <mat-label>Publish Message</mat-label>
+    <input matInput formControlName="subscribe">
+    <button matSuffix mat-icon-button (click)="publish()">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    </button>
+  </mat-form-field>
+</form>
+
+<!-- <app-subscribe [topic]="subscribeTopic"></app-subscribe> -->
+

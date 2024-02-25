@@ -1,0 +1,25 @@
+.board {
+  float: left;
+  height: 20px;
+  width: 20px;
+  border-left: solid;
+  border-top:solid;
+}
+
+.boardRight {
+  float: left;
+  height: 20px;
+  width: 20px;
+  border-left: solid;
+  border-right: solid;
+  border-top:solid;
+}
+
+.boardBottom {
+  border-bottom: solid;
+}
+
+.celle {
+  // border: solid;
+  // display: block;
+}

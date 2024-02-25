@@ -1,0 +1,14 @@
+<p>start-page works!</p>
+<br>
+<div style="width: 930px; margin-left: 20px;">
+  <div *ngFor="let item of list; let i = index" [ngClass]="{'boardRight' : rightBorder(i), 'board' : !rightBorder(i), 'boardBottom' : bottomBorder(i)}" >
+    <!-- <br *ngIf="newLine(i)"> -->
+    <svg width="20px" height="20px" class="celle">
+      <rect width="20" height="20" [attr.fill]="fillColor[i]" (click)="changeColor(i)" />
+    </svg>
+  </div>
+</div>
+
+
+
+
